@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation de Service</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+
+<div class="background-image">
+
+<h1>Réservation de Service</h1>
+
+<form id="reservation-form">
+    <label for="fullname">Nom et Prénom:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="city">Commune:</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="phone">Numéro de Téléphone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="service">Service:</label>
+    <select id="service" name="service" required>
+        <option value="">Sélectionner un service</option>
+        <option value="Plombier">Plombier</option>
+        <option value="Maçon">Maçon</option>
+        <option value="Électricien">Électricien</option>
+        <!-- Ajoutez d'autres options de service ici -->
+    </select>
+
+    <button type="submit">Réserver</button>
+</form>
+
+<div id="success-message" style="display: none;">
+    <p>Votre réservation a été enregistrée avec succès!</p>
+</div>
+
+<script src="reservation.js"></script>
+</body>
+</html>
